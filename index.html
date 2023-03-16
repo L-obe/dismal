@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jej</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="contenedor">
+		<img id="imagen" class="parpadear" src="piano.png" alt=".">
+		<audio id="audio" src="sound.mp3"></audio>
+	</div>
+
+    <script>
+		var contenedor = document.getElementById("contenedor");
+		var audio = document.getElementById("audio");
+
+		contenedor.addEventListener("click", function() {
+			audio.currentTime = 0.2;
+			audio.play();
+		});
+	</script>
+
+<script>
+    var imagen = document.getElementById("imagen");
+  
+    imagen.addEventListener("click", function() {
+      imagen.classList.toggle("parpadear");
+    });
+</script>
+</body>
+</html>

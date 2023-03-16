@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+}
+
+#contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+#contenedor img {
+    width: 80%;
+    height: auto;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.parpadear {
+    animation-name: parpadeo;
+    animation-duration: 0.2s;
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
